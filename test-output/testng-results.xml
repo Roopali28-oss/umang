@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="10036" started-at="2020-02-28T15:59:50 IST" finished-at="2020-02-28T16:00:00 IST">
+    <groups>
+    </groups>
+    <test name="ClickLogin" duration-ms="10036" started-at="2020-02-28T15:59:50 IST" finished-at="2020-02-28T16:00:00 IST">
+      <class name="umang.Homepage">
+        <test-method status="PASS" signature="initilise()[pri:0, instance:umang.Homepage@5a8806ef]" name="initilise" is-config="true" duration-ms="8506" started-at="2020-02-28T15:59:50 IST" finished-at="2020-02-28T15:59:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilise -->
+        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:umang.Homepage@5a8806ef]" name="basePageNavigation" duration-ms="1489" started-at="2020-02-28T15:59:59 IST" finished-at="2020-02-28T16:00:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+      </class> <!-- umang.Homepage -->
+    </test> <!-- ClickLogin -->
+  </suite> <!-- Suite -->
+</testng-results>
