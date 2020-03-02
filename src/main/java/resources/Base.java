@@ -30,20 +30,20 @@ public class Base {
 	
 	if (browserName.equals("chrome"))
 	{
-	System.setProperty("webdriver.chrome.driver","C:\\Users\\Daffolap-698\\Downloads\\drivers\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver","Lib/chromedriver.exe");
 driver=new ChromeDriver();
 	}
 	
 	else if(browserName.equals("firefox"))
 	{
 		
-		System.setProperty("webdriver.gecko.driver","C:\\Users\\Daffolap-698\\Downloads\\drivers\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver","Lib/geckodriver.exe");
 		 driver=new FirefoxDriver();
 	}
 	
 	else if  (browserName.equals("IE"))
 	{
-		System.setProperty("webdriver.ie.driver","C:\\Users\\Daffolap-698\\Downloads\\drivers\\MicrosoftWebDriver");
+		System.setProperty("webdriver.ie.driver","Lib/MicrosoftWebDriver");
 		WebDriver driver=new InternetExplorerDriver();
 	}
 	
@@ -55,6 +55,10 @@ driver=new ChromeDriver();
 	{
 		
 		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("C://Users//Daffolap-698//Desktop//Screenshots"+result+"screenshot.png"));
+		//FileUtils.copyFile(src, new File("C://Users//Daffolap-698//Desktop//Screenshots"+result+"screenshot.png"));
+		String currentDir = System.getProperty("user.dir");
+		FileUtils.copyFile(src, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
 	}
+	
+	
 }

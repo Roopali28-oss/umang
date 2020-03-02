@@ -5,9 +5,11 @@
 <listener class-name="umang.Listerner"></listener>
 <listener class-name="resources.ExtentReporterNG"></listener>
 </listeners>
-  <test thread-count="5" name="ClickLogin">
+  <test thread-count="5" name="Login">
     <classes>
-      <class name="umang.Homepage"/>
+      <class name="umang.LoginPageTest"/>
+     <class name="umang.HomePageTest"/>
     </classes>
+  
   </test> <!-- Test -->
 </suite> <!-- Suite -->
