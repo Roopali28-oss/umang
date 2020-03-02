@@ -7,7 +7,7 @@
 </listeners>
   <test thread-count="5" name="ClickLogin">
     <classes>
-      <class name="umang1.Homepage"/>
+      <class name="umang.Homepage"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
